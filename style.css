@@ -193,6 +193,7 @@ LANDING PAGE
 	transform: translate(-50%, -50%);
 	width: 100%;
 	max-width: 1000px;
+	padding-left: 12px;
 }
 
 .header__para {
@@ -680,8 +681,26 @@ footer {
 	left: 80vw;
 }
 
+/* Small phones, Tablets, Large smart phones */
 @media (max-width: 768px) {
 	.title {
+		font-size: 80px;
+	}
+	.header__para {
+		font-size: 20px;
+	}
 
+	.modal {
+		top: 0;
+		left: 0;
+		transform: none;
+		height: auto;
+		width: 100%;
+		border-radius: 0;
+		flex-direction: column-reverse;
+	}
+
+	.modal__half {
+		width: 100%;
 	}
 }
