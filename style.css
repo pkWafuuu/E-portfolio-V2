@@ -194,6 +194,7 @@ LANDING PAGE
 	width: 100%;
 	max-width: 1000px;
 	padding-left: 12px;
+	z-index: 1;
 }
 
 .header__para {
@@ -232,6 +233,7 @@ LANDING PAGE
 	position: fixed;
 	bottom: 32px;
 	right: 40px;
+	z-index: 100;
 }
 
 .scroll {
@@ -702,5 +704,39 @@ footer {
 
 	.modal__half {
 		width: 100%;
+	}
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+	.title {
+		font-size: 52px;
+	}
+
+	.header__para {
+		font-size: 18px;
+	}
+
+	.nav__link:first-child {
+		display: none;
+	}
+
+	.project__description--para {
+		display: none;
+	}
+
+	.project__description {
+		left: 0;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.project__description--sub-title {
+		margin-bottom: 8px;
+	}
+
+	.modal__half {
+		padding: 40px;
 	}
 }
