@@ -1,3 +1,4 @@
+@import url(/animations.css);
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 * {
 	margin: 0;
@@ -704,6 +705,11 @@ footer {
 
 	.modal__half {
 		width: 100%;
+	}
+
+	.shape {
+		width: 10px;
+		height: 10px;
 	}
 }
 
