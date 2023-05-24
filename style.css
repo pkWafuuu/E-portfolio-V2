@@ -80,13 +80,6 @@ label {
 	padding: 0 12px;
 }
 
-.title {
-	font-size: 120px;
-	margin-bottom: 12px;
-	text-align: left;
-	line-height: 1;
-}
-
 .text--colored {
 	/* color: #dd5a3c; */
 	color: #288fcf !important;
@@ -187,6 +180,8 @@ LANDING PAGE
 	min-height: 100vh;
 }
 
+
+
 .header {
 	position: absolute;
 	top: 50%;
@@ -198,15 +193,33 @@ LANDING PAGE
 	z-index: 1;
 }
 
+.title {
+	font-size: 120px;
+	margin-bottom: 12px;
+	text-align: left;
+	line-height: 1;
+	animation: fade-up 1000ms ease;
+}
+
 .header__para {
 	font-size: 20px;
 	line-height: 1.8;
 	max-width: 450px;
+	animation: fade-up 1000ms 300ms backwards;
+}
+
+.bounce {
+	display: inline-block;
+}
+
+.bounce:hover {
+	animation: bounce 1000ms infinite;
 }
 
 .social__links--list {
 	display: flex;
 	margin-top: 16px;
+	animation: fade-up 1000ms 500ms backwards;
 }
 
 .social__link {
@@ -235,6 +248,7 @@ LANDING PAGE
 	bottom: 32px;
 	right: 40px;
 	z-index: 100;
+	animation: expand-then-normal 1000ms 1300ms backwards;
 }
 
 .scroll {
@@ -294,10 +308,12 @@ nav {
 #personal-logo {
 	filter: invert(1);
 	height: 50px;
+	animation: fade-entry-left 1000ms 900ms backwards;
 }
 
 .nav__link--list {
 	display: flex;
+	animation: fade-entry-right 1000ms 900ms backwards;
 }
 
 .nav__link {
@@ -319,6 +335,12 @@ nav {
 	MODAL
 
 *******/
+
+.modal--open {
+	overflow: hidden;
+	height: 100%;
+}
+
 
 .modal {
 	position: absolute;

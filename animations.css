@@ -1,4 +1,22 @@
 
+@keyframes bounce {
+	0% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-3px);
+	}
+	70% {
+		transform: translateY(0);
+	}
+	80% {
+		transform: translateY(-1px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
 @keyframes pulse {
 	0% {
 		transform: scale(0.9)
@@ -12,7 +30,7 @@
 @keyframes fade-entry-left {
 	0% {
 		opacity: 0;
-		transform: translateX(-500px);
+		transform: translateX(-200px);
 	}
 	100% {
 		opacity: 1;
@@ -20,11 +38,13 @@
 	}
 }
 
-@keyframes entry-from-right {
+@keyframes fade-entry-right {
 	0% {
-		transform: translateX(500px);
+		opacity: 0;
+		transform: translateX(200px);
 	}
 	100% {
+		opacity: 1;
 		transform: translateX(0);
 	}
 }
