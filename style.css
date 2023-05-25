@@ -336,11 +336,6 @@ nav {
 
 *******/
 
-.modal--open {
-	overflow: hidden;
-	height: 100%;
-}
-
 
 .modal {
 	position: absolute;
